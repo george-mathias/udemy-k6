@@ -16,7 +16,7 @@ export let options = {
 
 export default function () {
     
-    const response = http.get(url) 
+    const response = http.get(url, { tags: {name: '01_home'}}) 
     
     console.log(`response body length: ${response.body.length} for VU = ${__VU} ITERA = ${__ITER}`);
     
